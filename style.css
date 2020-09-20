@@ -1,7 +1,10 @@
+/*Homepage*/
 body, html {
     height: 100%;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(to right, #eaffdo, #95e1d3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaffdo, #95e1d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
   * {
@@ -9,16 +12,13 @@ body, html {
   }
   
   .bg-image {
-    /* Full height */
     height: 100%;
     
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
-  /* Images used */
   .img1 { background-image: url("./images/1.jpg"); }
   .img2 { background-image: url("./images/2.jpg"); }
   .img3 { background-image: url("./images/3.jpg"); }
@@ -56,53 +56,187 @@ body, html {
       padding-bottom: 5px;
   }
 
+  .linkshome {
+    color:white;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type:none;
+  }
 
-
-
-
-
-
-
-
-
-
-
-/* body {
-    background: #667db6;  
-background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  
-background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
-}
-
-#mainTitle {
-    background-color: lightblue;
-    color: black;
-    padding: 40px;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-}
-
-#myInfo {
-    background-color: lightblue;
-    color: black;
-    padding: 40px;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-}
+  /* About Me */
+  body {
+    font-family: "Raleway", sans-serif;
+  }
   
+  .sidenav {
+    background: #FCE38A;
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
 
-.bg-text {
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    color: white;
-    font-weight: bold;
-    font-size: 80px;
-    border: 10px solid #f1f1f1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-    } */
+  }
+    .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+  }
+
+  .links {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 3px;
+    border-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    list-style-type:none;
+  }
+
+  .aboutbody {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidenav" "main";
+  }
+
+  .main {
+    grid-area: "main";
+    margin-left: 10px;
+  }
+
+  .main h2 {
+    margin-left:-50px;
+  }
+
+  .main p {
+    color: black;
+    margin-right:40%;
+  }
+
+  .main h5 {
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .LauraImage {
+    width: 80%;
+    height: auto;
+    padding-left:50px;
+  }
+
+  /*Contacts*/
+  body {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .sidenavsocial {
+    background: #FCE38A;
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+  }
+    .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+  }
+
+  .links {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 3px;
+    border-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    list-style-type:none;
+  }
+
+  .socialmediabody {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidenav" "main";
+  }
+
+  .main {
+    grid-area: "main";
+    margin-left: 10px;
+  }
+  h2 {
+    font-family: "Raleway", sans-serif;
+    padding-left:50px;
+  }
+
+  /*a {
+    position:center;
+    padding: 50px;
+  }*/
+
+  .socials img:hover {
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
+
+  .socials img {
+    margin: 2px;
+  }
+
+
+  /*Gallery*/
+
+  .gallery {
+    font-family: "Raleway", sans-serif;
+    background-color: #FCE38A;
+  }
+
+  .sidenavgallery {
+    background: #FCE38A;
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+  }
+    .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+  }
+
+  .links {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 3px;
+    border-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    list-style-type:none;
+  }
+
+  .gallerybody {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidenav" "main";
+  }
+
+  .main {
+    grid-area: "main";
+    margin-left: 10px;
