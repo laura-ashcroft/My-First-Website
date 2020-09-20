@@ -179,11 +179,6 @@ body, html {
     padding-left:50px;
   }
 
-  /*a {
-    position:center;
-    padding: 50px;
-  }*/
-
   .socials img:hover {
     webkit-filter: blur(4px); /* Chrome, Safari, Opera */
     filter: blur(4px);
