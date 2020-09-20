@@ -199,11 +199,15 @@ body, html {
   .gallery {
     font-family: "Raleway", sans-serif;
     background-color: #FCE38A;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidenavgallery" "maingallery";
   }
 
   .sidenavgallery {
     background: #FCE38A;
-    grid-area: sidenav;
+    grid-area: sidenavgallery;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -230,13 +234,8 @@ body, html {
     list-style-type:none;
   }
 
-  .gallerybody {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "sidenav" "main";
-  }
 
-  .main {
-    grid-area: "main";
+  .maingallery {
+    grid-area: "maingallery";
     margin-left: 10px;
+  }
